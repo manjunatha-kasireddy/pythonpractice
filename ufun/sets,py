@@ -1,0 +1,13 @@
+import numpy as np
+a1 = np.array([1, 2, 4, 4])
+a2 = np.array([3, 4, 5, 6])
+a = np.union1d(a1, a2)
+print(a)
+x = np.unique(a1)
+print(x)
+n = np.intersect1d(a1, a2, assume_unique=True)
+print(n)
+r = np.setdiff1d(a2, a1, assume_unique=True)
+print(r)
+b = np.setxor1d(a1, a2, assume_unique=True)
+print(b)
