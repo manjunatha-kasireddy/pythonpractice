@@ -1,0 +1,13 @@
+import numpy as np
+a1 = np.array([1, 2, 3])
+a2 = np.array([4, 5, 6])
+a = np.concatenate((a1, a2))
+print(a)
+b1 = np.array([1, 2, 3])
+b2 = np.array([4, 5, 6])
+b = np.stack((b1, b2), axis=1)
+print(b)
+c1 = np.array([1, 2, 3])
+c2 = np.array([4, 5, 6])
+c = np.dstack((c1, c2))
+print(c)

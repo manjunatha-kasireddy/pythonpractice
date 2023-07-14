@@ -1,0 +1,10 @@
+import numpy as np
+a = np.array([1, 2, 3, 4, 5, 4, 4])
+x = np.where(a == 4)
+print(x)
+x = np.where(a%2 == 1)
+print(x)
+x = np.searchsorted(a, 3)
+print(x)
+y = np.searchsorted(a, 8, side='right')
+print(y)
